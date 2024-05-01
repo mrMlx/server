@@ -1,7 +1,7 @@
 import socket
 
 socket_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-socket_server.bind('localhost', 12345)
+socket_server.bind(('localhost', 12345))
 socket_server.listen(1)
 print("listening")
 
