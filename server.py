@@ -7,6 +7,7 @@ socket_server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 socket_server.bind(("192.168.0.54", 12345)) # your ip and port
 
+socket_server.listen(4)
 print("listening")
 
 socket_client, address_client = socket_server.accept()
